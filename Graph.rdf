@@ -1,0 +1,2508 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies"
+         xmlns="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies"/>
+
+<owl:ObjectProperty rdf:about="#BelongsToHouse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#House"/>
+  <rdfs:comment>In harry potter movies, A charcater belongs to a certain house namely "gryffindor", "hufflepuff", "ravenclaw" , "Slytherin" 
+A character can only be a part of one of thse houses</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#BelongsToSpecies">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Species"/>
+  <rdfs:comment>Every character belongs to a species</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasBloodStatus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#BloodStatus"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasCharacters">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  <rdfs:domain rdf:resource="#House"/>
+  <rdfs:range rdf:resource="#Character"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasEffect">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Spell"/>
+  <rdfs:range rdf:resource="#Effect"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasEyeColor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#EyeColor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasHairColor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#HairColor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasIncantation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Spell"/>
+  <rdfs:range rdf:resource="#Incantation"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasJob">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Job"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasLight">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Spell"/>
+  <rdfs:range rdf:resource="#Light"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasPatronus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Patronus"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasSkills">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Skills"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasWand">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="#Wand"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#hasGender">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#quidditch_1991_1992">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#quidditch_1995_1996">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#quidditch_1996_1997">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#quiidditch_1997_1998">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Character"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#BloodStatus">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Half_blood"/>
+        <rdf:Description rdf:about="#Muggle_blood"/>
+        <rdf:Description rdf:about="#Muggle_born"/>
+        <rdf:Description rdf:about="#Part_Human_Half_giant"/>
+        <rdf:Description rdf:about="#Pure_blood"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#Character"/>
+
+<owl:Class rdf:about="#Effect"/>
+
+<owl:Class rdf:about="#EyeColor"/>
+
+<owl:Class rdf:about="#Ghost">
+  <rdfs:subClassOf rdf:resource="#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="#HairColor"/>
+
+<owl:Class rdf:about="#HalfBlood">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Character"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasBloodStatus"/>
+          <owl:hasValue rdf:resource="#Half_blood"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:disjointWith rdf:resource="#MuggleBlood"/>
+  <owl:disjointWith rdf:resource="#MuggleBorn"/>
+  <owl:disjointWith rdf:resource="#PartHuman_HalfGiant"/>
+  <owl:disjointWith rdf:resource="#PureBlood"/>
+  <rdfs:comment>A wizard whose blood status is half-blood is classified as a half-blood wizard</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#HalfHumanHalfGiant">
+  <rdfs:subClassOf rdf:resource="#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="#House">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Gryffindor"/>
+        <rdf:Description rdf:about="#Hufflepuff"/>
+        <rdf:Description rdf:about="#Ravenclaw"/>
+        <rdf:Description rdf:about="#Slytherin"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="#Human">
+  <rdfs:subClassOf rdf:resource="#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Incantation"/>
+
+<owl:Class rdf:about="#Job"/>
+
+<owl:Class rdf:about="#Light"/>
+
+<owl:Class rdf:about="#MuggleBlood">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Character"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasBloodStatus"/>
+          <owl:hasValue rdf:resource="#Muggle_blood"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:disjointWith rdf:resource="#PartHuman_HalfGiant"/>
+  <rdfs:comment>A charcater with no wizard blood, is a Muggle</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#MuggleBorn">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Character"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasBloodStatus"/>
+          <owl:hasValue rdf:resource="#Muggle_born"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:disjointWith rdf:resource="#PartHuman_HalfGiant"/>
+  <rdfs:comment>A wizard whose blood status is muggle-born is known to be a mugle-born wizard</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#PartHuman_HalfGiant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Character"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasBloodStatus"/>
+          <owl:hasValue rdf:resource="#Part_Human_Half_giant"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <owl:disjointWith rdf:resource="#PureBlood"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Patronus"/>
+
+<owl:Class rdf:about="#PureBlood">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Character"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasBloodStatus"/>
+          <owl:hasValue rdf:resource="#Pure_blood"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:comment>a (character)wizard whose blood status is pureblood is a pure-blood wizard.
+made it a defined class because it has all the necessary and sufficient conditions to be classified as a "Pure-blood"</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#Skills"/>
+
+<owl:Class rdf:about="#Species"/>
+
+<owl:Class rdf:about="#Spell"/>
+
+<owl:Class rdf:about="#Wand"/>
+
+<owl:Class rdf:about="#Werewolf">
+  <rdfs:subClassOf rdf:resource="#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Wizard">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#BelongsToHouse"/>
+      <owl:onClass rdf:resource="#House"/>
+      <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </owl:Restriction>
+  </owl:equivalentClass>
+</owl:Class>
+
+<House rdf:about="#Gryffindor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</House>
+
+<BloodStatus rdf:about="#Half_blood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+</BloodStatus>
+
+<House rdf:about="#Hufflepuff">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</House>
+
+<BloodStatus rdf:about="#Muggle_blood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasBloodStatus rdf:resource="#Muggle_blood"/>
+</BloodStatus>
+
+<BloodStatus rdf:about="#Muggle_born">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+</BloodStatus>
+
+<BloodStatus rdf:about="#Part_Human_Half_giant">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasBloodStatus rdf:resource="#Part_Human_Half_giant"/>
+</BloodStatus>
+
+<BloodStatus rdf:about="#Pure_blood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+</BloodStatus>
+
+<House rdf:about="#Ravenclaw">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</House>
+
+<House rdf:about="#Slytherin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</House>
+
+<Character rdf:about="#HarryJamesPotter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#11Hollyphoenixfeather"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Stag"/>
+  <hasSkills rdf:resource="#Parseltongue_DefenceAgainsttheDarkArts_Seeker"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#BrightGreen"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#RonaldBiliusWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#12Ashunicorntailhair"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#JackRussellterrier"/>
+  <hasSkills rdf:resource="#Wizardchess_Quidditchgoalkeeping"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#HermioneJeanGranger">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#10_vinewooddragonheartstring"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Otter"/>
+  <hasSkills rdf:resource="#Almosteverything"/>
+  <hasHairColor rdf:resource="#Brown"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#AlbusPercivalWulfricBrianDumbledore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#15ElderThestraltailhaircore"/>
+  <hasJob rdf:resource="#Headmaster"/>
+  <hasPatronus rdf:resource="#Phoenix"/>
+  <hasSkills rdf:resource="#Consideredbymanytobeoneofthemostpowerfulwizardsofhistime"/>
+  <hasHairColor rdf:resource="#Silver_formerlyauburn"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#RubeusHagrid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#16Oakunknowncore"/>
+  <hasJob rdf:resource="#KeeperofKeysandGroundsProfessorofCareofMagicalCreatures"/>
+  <hasPatronus rdf:resource="#None"/>
+  <hasSkills rdf:resource="#Resistanttostunningspells_aboveaveragestrength_crossbowmanship"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Black"/>
+  <BelongsToSpecies rdf:resource="#HalfHumanHalfGiant"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Part_Human_Half_giant"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#NevilleLongbottom">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#13Cherryunicornhair"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Herbology"/>
+  <hasHairColor rdf:resource="#Blond"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#JustinFinch-Fletchley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Beater"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Hufflepuff"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#GeorgeWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Beater"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#Ginevra(Ginny)MollyWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Horse"/>
+  <hasSkills rdf:resource="#Chaser_Bat-Bogeyhex"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#BrightBrown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#DeanThomas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Chaser"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#SeamusFinnigan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Fox"/>
+  <hasSkills rdf:resource="#Pyrotechnics"/>
+  <hasHairColor rdf:resource="#Sandy"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#LilyJ.Potter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#10Î_Willowunknowncore"/>
+  <hasJob rdf:resource="#Unknown"/>
+  <hasPatronus rdf:resource="#Doe"/>
+  <hasSkills rdf:resource="#None"/>
+  <hasHairColor rdf:resource="#Auburn"/>
+  <hasEyeColor rdf:resource="#BrightGreen"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#JamesPotter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#11Mahoganyunknowncore"/>
+  <hasJob rdf:resource="#Unknown"/>
+  <hasPatronus rdf:resource="#Stag"/>
+  <hasSkills rdf:resource="#Animagus_Seeker"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Hazel"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#SiriusBlack">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Unknown"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Animagus_nonverbalmagic_Charms"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Grey"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#RemusJohnLupin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#10_Cypressunicornhair"/>
+  <hasJob rdf:resource="#ProfessorofDefenceAgainsttheDarkArts"/>
+  <hasPatronus rdf:resource="#Wolf"/>
+  <hasSkills rdf:resource="#ExceptionallygiftedinDefenceAgainsttheDarkArts"/>
+  <hasHairColor rdf:resource="#Lightbrownfleckedwithgrey"/>
+  <hasEyeColor rdf:resource="#Green"/>
+  <BelongsToSpecies rdf:resource="#Werewolf"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#PeterPettigrew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#9_Chestnutdragonheartstring"/>
+  <hasJob rdf:resource="#TheServantofLordVoldemort"/>
+  <hasPatronus rdf:resource="#None"/>
+  <hasSkills rdf:resource="#Animagus"/>
+  <hasHairColor rdf:resource="#Colourlessandbalding"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#PercyIgnatiusWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student_Prefect_PersonalassistanttoBartyCrouchSnr"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Intelligent_hard-working_amodelstudent"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#(Bill)WilliamArthurWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Curse-BreakerforGringottsBank"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Highlyskilledcurse-breakerforGringottsWizardingBank_veryintelligent_pastHogwartsHeadBoy"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#CharlesWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#12Ashunicorntailhair"/>
+  <hasJob rdf:resource="#Dragonologist"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Highlyskilleddragontrainer_one-timeGryffindorSeeker"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Grey"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#HannahAbbott">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Defensivespells"/>
+  <hasHairColor rdf:resource="#Blonde"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Hufflepuff"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#OliverWood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Keeper_CaptainoftheGryffindorQuidditchteam"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#PetuniaDursley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#None"/>
+  <hasJob rdf:resource="#None"/>
+  <hasPatronus rdf:resource="#None"/>
+  <hasSkills rdf:resource="#None"/>
+  <hasHairColor rdf:resource="#Blonde"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <hasBloodStatus rdf:resource="#Muggle_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#KatieBell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Chaser"/>
+  <hasHairColor rdf:resource="#Brown"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#AliciaSpinnet">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Chaser"/>
+  <hasHairColor rdf:resource="#Brown"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#LavenderBrown">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Divination"/>
+  <hasHairColor rdf:resource="#Blond"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#ParvatiPatil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Divination"/>
+  <hasHairColor rdf:resource="#Dark"/>
+  <hasEyeColor rdf:resource="#Dark"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#RomildaVane">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#SpikingChocolateCauldronswithlovepotion"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Dark"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#ColinCreevey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Photography"/>
+  <hasHairColor rdf:resource="#Mousy"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#CormacMcLaggen">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#QuidditchKeeper"/>
+  <hasHairColor rdf:resource="#Blond"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#MinervaMcGonagall">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#9_Firdragonheartstring"/>
+  <hasJob rdf:resource="#ProfessorofTransfiguration_HeadofGryffindor"/>
+  <hasPatronus rdf:resource="#Cat"/>
+  <hasSkills rdf:resource="#Animagus"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Green"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#MollyWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Unknown"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Householdspells_healingmagic"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#BrightBrown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#ArthurWeasley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#HeadoftheMisuseofMuggleArtefactsOffice"/>
+  <hasPatronus rdf:resource="#Weasel"/>
+  <hasSkills rdf:resource="#Muggleworldworks"/>
+  <hasHairColor rdf:resource="#Red"/>
+  <hasEyeColor rdf:resource="#Green"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Gryffindor"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#QuirinusQuirrell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#9Alderunicornhairbendy"/>
+  <hasJob rdf:resource="#DefenceAgainsttheDarkArts(1991-1992)"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#LearnedinthetheoryofDefensiveMagic_lessadeptinthepractise"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#ChoChang">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Swan"/>
+  <hasSkills rdf:resource="#Seeker"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Dark"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#LunaLovegood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Hare"/>
+  <hasSkills rdf:resource="#SpottingNargles"/>
+  <hasHairColor rdf:resource="#DirtyBlonde"/>
+  <hasEyeColor rdf:resource="#PaleSilvery"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#GilderoyLockhart">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#9Cherrydragonheartstring"/>
+  <hasJob rdf:resource="#DefenceAgainsttheDarkArts(1992-1993)"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#None"/>
+  <hasHairColor rdf:resource="#Blond"/>
+  <hasEyeColor rdf:resource="#Blue"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#SybillPatriciaTrelawney">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#9_hazelunicornhaircore"/>
+  <hasJob rdf:resource="#ProfessorofDivination"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#ASeer"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#GarrickOllivander">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#12_Hornbeamdragonheartstring"/>
+  <hasJob rdf:resource="#Wandmaker"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Anincomparableunderstandingofwandcraft"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Silvery"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#MyrtleElizabethWarren">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#None"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Ghost"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Muggle_born"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#PadmaPatil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Prefect"/>
+  <hasHairColor rdf:resource="#Dark"/>
+  <hasEyeColor rdf:resource="#Dark"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#MichaelCorner">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Squirrel"/>
+  <hasSkills rdf:resource="#Potions"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Brown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#MariettaEdgecombe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#CoveringupthespotsthatblightherfaceafterbetrayingDumbledore'sArmy"/>
+  <hasHairColor rdf:resource="#ReddishBlonde"/>
+  <hasEyeColor rdf:resource="#Grey"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#TerryBoot">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Potions"/>
+  <hasHairColor rdf:resource="#Unknown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#AnthonyGoldstein">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Non-corporeal"/>
+  <hasSkills rdf:resource="#Prefect"/>
+  <hasHairColor rdf:resource="#Blonde"/>
+  <hasEyeColor rdf:resource="#Grey"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Ravenclaw"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#SeverusSnape">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#ProfessorofPotions_HeadofSlytherin"/>
+  <hasPatronus rdf:resource="#Doe"/>
+  <hasSkills rdf:resource="#ExtremelyskilledatpotionsandOcclumency"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Black"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Slytherin"/>
+  <hasBloodStatus rdf:resource="#Half_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#DracoMalfoy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#10Hawthornunicornhair"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Prefect"/>
+  <hasHairColor rdf:resource="#WhiteBlonde"/>
+  <hasEyeColor rdf:resource="#Grey"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Slytherin"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#VincentCrabbe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Beater"/>
+  <hasHairColor rdf:resource="#Black"/>
+  <hasEyeColor rdf:resource="#Black"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Slytherin"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Character rdf:about="#GregoryGoyle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasWand rdf:resource="#Unknown"/>
+  <hasJob rdf:resource="#Student"/>
+  <hasPatronus rdf:resource="#Unknown"/>
+  <hasSkills rdf:resource="#Beater"/>
+  <hasHairColor rdf:resource="#Brown"/>
+  <hasEyeColor rdf:resource="#Unknown"/>
+  <BelongsToSpecies rdf:resource="#Human"/>
+  <BelongsToHouse rdf:resource="#Slytherin"/>
+  <hasBloodStatus rdf:resource="#Pure_blood"/>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+  <quidditch_1991_1992 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1991_1992>
+  <quidditch_1995_1996 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1995_1996>
+  <quidditch_1996_1997 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</quidditch_1996_1997>
+</Character>
+
+<Wand rdf:about="#11Hollyphoenixfeather">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#12Ashunicorntailhair">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#10_vinewooddragonheartstring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#15ElderThestraltailhaircore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#16Oakunknowncore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#13Cherryunicornhair">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#Unknown">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Job"/>
+  <rdf:type rdf:resource="#Patronus"/>
+  <rdf:type rdf:resource="#HairColor"/>
+  <rdf:type rdf:resource="#EyeColor"/>
+  <rdf:type rdf:resource="#Light"/>
+</Wand>
+
+<Wand rdf:about="#10Î_Willowunknowncore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#11Mahoganyunknowncore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#10_Cypressunicornhair">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#9_Chestnutdragonheartstring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#None">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Job"/>
+  <rdf:type rdf:resource="#Patronus"/>
+  <rdf:type rdf:resource="#Skills"/>
+</Wand>
+
+<Wand rdf:about="#9_Firdragonheartstring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#9Alderunicornhairbendy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#9Cherrydragonheartstring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#9_hazelunicornhaircore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#12_Hornbeamdragonheartstring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Wand rdf:about="#10Hawthornunicornhair">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Wand>
+
+<Job rdf:about="#Student">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#Headmaster">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#KeeperofKeysandGroundsProfessorofCareofMagicalCreatures">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#ProfessorofDefenceAgainsttheDarkArts">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#TheServantofLordVoldemort">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#Student_Prefect_PersonalassistanttoBartyCrouchSnr">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#Curse-BreakerforGringottsBank">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#Dragonologist">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#ProfessorofTransfiguration_HeadofGryffindor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#HeadoftheMisuseofMuggleArtefactsOffice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#DefenceAgainsttheDarkArts(1991-1992)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#DefenceAgainsttheDarkArts(1992-1993)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#ProfessorofDivination">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#Wandmaker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Job rdf:about="#ProfessorofPotions_HeadofSlytherin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Job>
+
+<Patronus rdf:about="#Stag">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#JackRussellterrier">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Otter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Phoenix">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Non-corporeal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Horse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Fox">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Doe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Wolf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Cat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Weasel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Swan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Hare">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Patronus rdf:about="#Squirrel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Patronus>
+
+<Skills rdf:about="#Parseltongue_DefenceAgainsttheDarkArts_Seeker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Wizardchess_Quidditchgoalkeeping">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Almosteverything">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Consideredbymanytobeoneofthemostpowerfulwizardsofhistime">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Resistanttostunningspells_aboveaveragestrength_crossbowmanship">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Herbology">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Beater">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Chaser_Bat-Bogeyhex">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Chaser">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Pyrotechnics">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Animagus_Seeker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Animagus_nonverbalmagic_Charms">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#ExceptionallygiftedinDefenceAgainsttheDarkArts">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Animagus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Intelligent_hard-working_amodelstudent">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Highlyskilledcurse-breakerforGringottsWizardingBank_veryintelligent_pastHogwartsHeadBoy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Highlyskilleddragontrainer_one-timeGryffindorSeeker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Defensivespells">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Keeper_CaptainoftheGryffindorQuidditchteam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Divination">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#SpikingChocolateCauldronswithlovepotion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Photography">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#QuidditchKeeper">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Householdspells_healingmagic">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Muggleworldworks">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#LearnedinthetheoryofDefensiveMagic_lessadeptinthepractise">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Seeker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#SpottingNargles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#ASeer">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Anincomparableunderstandingofwandcraft">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Prefect">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#Potions">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#CoveringupthespotsthatblightherfaceafterbetrayingDumbledore'sArmy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<Skills rdf:about="#ExtremelyskilledatpotionsandOcclumency">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Skills>
+
+<HairColor rdf:about="#Black">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#EyeColor"/>
+</HairColor>
+
+<HairColor rdf:about="#Red">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Light"/>
+</HairColor>
+
+<HairColor rdf:about="#Brown">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#EyeColor"/>
+</HairColor>
+
+<HairColor rdf:about="#Silver_formerlyauburn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Blond">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Sandy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Auburn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Lightbrownfleckedwithgrey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Colourlessandbalding">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Blonde">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#Dark">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#EyeColor"/>
+</HairColor>
+
+<HairColor rdf:about="#Mousy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#DirtyBlonde">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#ReddishBlonde">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<HairColor rdf:about="#WhiteBlonde">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</HairColor>
+
+<EyeColor rdf:about="#BrightGreen">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<EyeColor rdf:about="#Blue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Light"/>
+</EyeColor>
+
+<EyeColor rdf:about="#BrightBrown">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<EyeColor rdf:about="#Hazel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<EyeColor rdf:about="#Grey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<EyeColor rdf:about="#Green">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Light"/>
+</EyeColor>
+
+<EyeColor rdf:about="#PaleSilvery">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<EyeColor rdf:about="#Silvery">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</EyeColor>
+
+<Effect rdf:about="#Animatestarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#PiertotumLocomotor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Animatestarget"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#PiertotumLocomotor"/>
+  <hasLight rdf:resource="#Green"/>
+</Spell>
+
+<Effect rdf:about="#Assaultstargetwithdirectedobject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#OppugnoJinx">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Assaultstargetwithdirectedobject"/>
+  <hasIncantation rdf:resource="#Oppugno"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Bindstargetinropes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#IncarcerousSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Bindstargetinropes"/>
+  <hasIncantation rdf:resource="#Incarcerous"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Blowsthingsup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ExpulsoCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Blowsthingsup"/>
+  <hasIncantation rdf:resource="#Expulso"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Causesswelling">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#EngorgementCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Causesswelling"/>
+  <hasIncantation rdf:resource="#Engorgio"/>
+  <hasLight rdf:resource="#Icyblue"/>
+</Spell>
+
+<Effect rdf:about="#Concealssound">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#MuffliatoCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Concealssound"/>
+  <hasIncantation rdf:resource="#Muffliato"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Conjuresaspiritguardian">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#PatronusCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Conjuresaspiritguardian"/>
+  <hasIncantation rdf:resource="#ExpectoPatronum"/>
+  <hasLight rdf:resource="#Silver"/>
+</Spell>
+
+<Effect rdf:about="#Conjuresflames">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#FireMakingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Conjuresflames"/>
+  <hasIncantation rdf:resource="#Incendio"/>
+  <hasLight rdf:resource="#Orange"/>
+</Spell>
+
+<Effect rdf:about="#Conjuressnake">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SnakeSummonsSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Conjuressnake"/>
+  <hasIncantation rdf:resource="#Serpensortia"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Conjureswater">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#WaterMakingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Conjureswater"/>
+  <hasIncantation rdf:resource="#Aguamenti"/>
+  <hasLight rdf:resource="#Icyblue"/>
+</Spell>
+
+<Effect rdf:about="#Cutsobjects">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SeveringCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Cutsobjects"/>
+  <hasIncantation rdf:resource="#Diffindo"/>
+  <hasLight rdf:resource="#Lightgreen"/>
+</Spell>
+
+<Effect rdf:about="#Disarmsanopponent">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#DisarmingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Disarmsanopponent"/>
+  <hasIncantation rdf:resource="#Expelliarmus"/>
+  <hasLight rdf:resource="#Scarlet"/>
+</Spell>
+
+<Effect rdf:about="#Erasesmemories">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#MemoryCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Erasesmemories"/>
+  <hasIncantation rdf:resource="#Obliviate"/>
+  <hasLight rdf:resource="#Green"/>
+</Spell>
+
+<Effect rdf:about="#Excruciatingpain">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#CruciatusCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Excruciatingpain"/>
+  <hasIncantation rdf:resource="#Crucio"/>
+  <hasLight rdf:resource="#Red"/>
+</Spell>
+
+<Effect rdf:about="#Explosion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#BlastingCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Explosion"/>
+  <hasIncantation rdf:resource="#Confringo"/>
+  <hasLight rdf:resource="#FieryOrange"/>
+</Spell>
+
+<Effect rdf:about="#Extinguisheswandlight">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#WandExtinguishingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Extinguisheswandlight"/>
+  <hasIncantation rdf:resource="#Nox"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Fixesbrokenobjects">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#MendingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Fixesbrokenobjects"/>
+  <hasIncantation rdf:resource="#Reparo"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Forcestargettoletgo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#RevulsionJinx">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Forcestargettoletgo"/>
+  <hasIncantation rdf:resource="#Relashio"/>
+  <hasLight rdf:resource="#Purple"/>
+</Spell>
+
+<Effect rdf:about="#Healsminorinjuries">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Episkey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Healsminorinjuries"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Episkey"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Hexdeflection">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Salviohexia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Hexdeflection"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Salviohexia"/>
+  <hasLight rdf:resource="#Haze"/>
+</Spell>
+
+<Effect rdf:about="#Hindersmovement">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ImpedimentJinx">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Hindersmovement"/>
+  <hasIncantation rdf:resource="#Impedimenta"/>
+  <hasLight rdf:resource="#Turquoise"/>
+</Spell>
+
+<Effect rdf:about="#Illuminatesthewandtip">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#WandLightingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Illuminatesthewandtip"/>
+  <hasIncantation rdf:resource="#Lumos"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Instantaneousdeath">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#KillingCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Instantaneousdeath"/>
+  <hasIncantation rdf:resource="#AvadaKedavra"/>
+  <hasLight rdf:resource="#Green"/>
+</Spell>
+
+<Effect rdf:about="#Knocksouttarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#StunningSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Knocksouttarget"/>
+  <hasIncantation rdf:resource="#Stupefy"/>
+  <hasLight rdf:resource="#Red"/>
+</Spell>
+
+<Effect rdf:about="#Laceratestarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Sectumsempra">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Laceratestarget"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Sectumsempra"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Locksdoors">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LockingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Locksdoors"/>
+  <hasIncantation rdf:resource="#Colloportus"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Makesobjectsfly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LevitationCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Makesobjectsfly"/>
+  <hasIncantation rdf:resource="#WingardiumLeviosa"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Mendsbones">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#BrackiumEmendo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Mendsbones"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#BrackiumEmendo"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Movesobjectsinmidair">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LocomotionCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Movesobjectsinmidair"/>
+  <hasIncantation rdf:resource="#Locomotor"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#supposedlycapturespixies">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#PeskipiksiPesternomi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#supposedlycapturespixies"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#PeskipiksiPesternomi"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Openschests">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#CistemAperio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Openschests"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#CistemAperio"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Producesbrightlight">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LumosMaxima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Producesbrightlight"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#LumosMaxima"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Producessunlight">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LumosSolemSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Producessunlight"/>
+  <hasIncantation rdf:resource="#LumosSolem"/>
+  <hasLight rdf:resource="#Brightyellow"/>
+</Spell>
+
+<Effect rdf:about="#Reflectsspellsandblocksphysicalforces">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ShieldCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Reflectsspellsandblocksphysicalforces"/>
+  <hasIncantation rdf:resource="#Protego"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Repairsglasses">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#OculusReparo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Repairsglasses"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#OculusReparo"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Repelsenemies_fusedwithProtegoMaximaandFiantoDuri">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#RepelloInimicum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Repelsenemies_fusedwithProtegoMaximaandFiantoDuri"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#RepelloInimicum"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#RepelsMuggles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#MuggleRepellingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#RepelsMuggles"/>
+  <hasIncantation rdf:resource="#RepelloMuggletum"/>
+  <hasLight rdf:resource="#Haze"/>
+</Spell>
+
+<Effect rdf:about="#Repelsspiders">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SpiderRepellingspell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Repelsspiders"/>
+  <hasIncantation rdf:resource="#AraniaExumai"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Revealshumanpresence">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#HumanPresenceRevealingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Revealshumanpresence"/>
+  <hasIncantation rdf:resource="#HomenumRevelio"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Revealssecretpassages">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Dissendium">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Revealssecretpassages"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Dissendium"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Revealssecretsaboutapersonorobject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#RevelioCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Revealssecretsaboutapersonorobject"/>
+  <hasIncantation rdf:resource="#Revelio"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Rocketstargetupward">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LaunchAnObjectUpInToTheAir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Rocketstargetupward"/>
+  <hasIncantation rdf:resource="#AlarteAscendare"/>
+  <hasLight rdf:resource="#Red"/>
+</Spell>
+
+<Effect rdf:about="#Shieldsanarea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Protegototalum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Shieldsanarea"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Protegototalum"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Showsthepreviousspellscastbyawand">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ReverseSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Showsthepreviousspellscastbyawand"/>
+  <hasIncantation rdf:resource="#PrioriIncantatem"/>
+  <hasLight rdf:resource="#Gold"/>
+</Spell>
+
+<Effect rdf:about="#Shrinkstarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ShrinkingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Shrinkstarget"/>
+  <hasIncantation rdf:resource="#Reducio"/>
+  <hasLight rdf:resource="#Purple"/>
+</Spell>
+
+<Effect rdf:about="#Slowsorstopstarget'svelocity">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SlowingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Slowsorstopstarget'svelocity"/>
+  <hasIncantation rdf:resource="#ArrestoMomentum"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Smallexplosion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ExplodingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Smallexplosion"/>
+  <hasIncantation rdf:resource="#Bombarda"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Stickslegstogether">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#LegLockerCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Stickslegstogether"/>
+  <hasIncantation rdf:resource="#LocomotorMortis"/>
+  <hasLight rdf:resource="#Purple"/>
+</Spell>
+
+<Effect rdf:about="#Stopsmovementandactionsofthetarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#FreezingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Stopsmovementandactionsofthetarget"/>
+  <hasIncantation rdf:resource="#Immobulus"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Summonsalargeprotectivebarrier">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ProtegoMaxima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Summonsalargeprotectivebarrier"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#ProtegoMaxima"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Summonsanobject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SummoningCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Summonsanobject"/>
+  <hasIncantation rdf:resource="#Accio"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Suspendspeoplebytheankles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Levicorpus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Suspendspeoplebytheankles"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Levicorpus"/>
+  <hasLight rdf:resource="#Green"/>
+</Spell>
+
+<Effect rdf:about="#TemporaryParalysis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#FullBodyBindCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#TemporaryParalysis"/>
+  <hasIncantation rdf:resource="#PetrificusTotalus"/>
+  <hasLight rdf:resource="#White"/>
+</Spell>
+
+<Effect rdf:about="#Terminatesallspelleffects">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#GeneralCounterSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Terminatesallspelleffects"/>
+  <hasIncantation rdf:resource="#Finite"/>
+  <hasLight rdf:resource="#Red"/>
+</Spell>
+
+<Effect rdf:about="#Ticklesandweakens">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#TicklingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Ticklesandweakens"/>
+  <hasIncantation rdf:resource="#Rictusempra"/>
+  <hasLight rdf:resource="#Silver"/>
+</Spell>
+
+<Effect rdf:about="#Totalcontroloverthevictim">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#ImperiusCurse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Totalcontroloverthevictim"/>
+  <hasIncantation rdf:resource="#Imperio"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#Transformsanimalsintowatergoblets">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#VeraVerto">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Transformsanimalsintowatergoblets"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#VeraVerto"/>
+  <hasLight rdf:resource="#Crystalclear"/>
+</Spell>
+
+<Effect rdf:about="#TurnsaBoggartintosomethingamusing">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#BoggartBanishingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#TurnsaBoggartintosomethingamusing"/>
+  <hasIncantation rdf:resource="#Riddikulus"/>
+  <hasLight rdf:resource="#Unknown"/>
+</Spell>
+
+<Effect rdf:about="#TurnsobjectintoPortkey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#Portus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#TurnsobjectintoPortkey"/>
+  <rdf:type rdf:resource="#Incantation"/>
+  <hasIncantation rdf:resource="#Portus"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Unlockstarget">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#UnlockingCharm">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Unlockstarget"/>
+  <hasIncantation rdf:resource="#Alohomora"/>
+  <hasLight rdf:resource="#Blue"/>
+</Spell>
+
+<Effect rdf:about="#Vanishessnakes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Effect>
+
+<Spell rdf:about="#SnakeVanishingSpell">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEffect rdf:resource="#Vanishessnakes"/>
+  <hasIncantation rdf:resource="#ViperaEvanesca"/>
+  <hasLight rdf:resource="#Blacksmoke"/>
+</Spell>
+
+<Incantation rdf:about="#Oppugno">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Incarcerous">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Expulso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Engorgio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Muffliato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#ExpectoPatronum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Incendio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Serpensortia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Aguamenti">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Diffindo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Expelliarmus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Obliviate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Crucio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Confringo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Nox">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Reparo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Relashio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Impedimenta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Lumos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#AvadaKedavra">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Stupefy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Colloportus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#WingardiumLeviosa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Locomotor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#LumosSolem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Protego">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#RepelloMuggletum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#AraniaExumai">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#HomenumRevelio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Revelio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#AlarteAscendare">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#PrioriIncantatem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Reducio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#ArrestoMomentum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Bombarda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#LocomotorMortis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Immobulus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Accio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#PetrificusTotalus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Finite">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Rictusempra">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Imperio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Riddikulus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#Alohomora">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Incantation rdf:about="#ViperaEvanesca">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Incantation>
+
+<Light rdf:about="#Icyblue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Silver">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Orange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#White">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Lightgreen">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Scarlet">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#FieryOrange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Purple">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Haze">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Turquoise">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Brightyellow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Gold">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Crystalclear">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<Light rdf:about="#Blacksmoke">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Light>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MuggleBlood"/>
+    <rdf:Description rdf:about="#MuggleBorn"/>
+    <rdf:Description rdf:about="#PureBlood"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#Ghost"/>
+    <rdf:Description rdf:about="#HalfHumanHalfGiant"/>
+    <rdf:Description rdf:about="#Human"/>
+    <rdf:Description rdf:about="#Werewolf"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

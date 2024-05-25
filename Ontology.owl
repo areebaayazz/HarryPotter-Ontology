@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies">
+    <Prefix name="" IRI="http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BloodStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EyeColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ghost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HairColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HalfBlood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HalfHumanHalfGiant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incantation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuggleBlood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuggleBorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartHuman_HalfGiant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patronus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PureBlood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skills"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Werewolf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wizard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BelongsToHouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BelongsToSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacters"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEyeColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHairColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIncantation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasJob"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPatronus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkills"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWand"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quidditch_1991_1992"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quidditch_1995_1996"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quidditch_1996_1997"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quiidditch_1997_1998"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gryffindor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Half_blood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hufflepuff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muggle_blood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muggle_born"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Part_Human_Half_giant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pure_blood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ravenclaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slytherin"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BloodStatus"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Half_blood"/>
+            <NamedIndividual IRI="#Muggle_blood"/>
+            <NamedIndividual IRI="#Muggle_born"/>
+            <NamedIndividual IRI="#Part_Human_Half_giant"/>
+            <NamedIndividual IRI="#Pure_blood"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HalfBlood"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Character"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBloodStatus"/>
+                <NamedIndividual IRI="#Half_blood"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#House"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Gryffindor"/>
+            <NamedIndividual IRI="#Hufflepuff"/>
+            <NamedIndividual IRI="#Ravenclaw"/>
+            <NamedIndividual IRI="#Slytherin"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MuggleBlood"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Character"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBloodStatus"/>
+                <NamedIndividual IRI="#Muggle_blood"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MuggleBorn"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Character"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBloodStatus"/>
+                <NamedIndividual IRI="#Muggle_born"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PartHuman_HalfGiant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Character"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBloodStatus"/>
+                <NamedIndividual IRI="#Part_Human_Half_giant"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PureBlood"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Character"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasBloodStatus"/>
+                <NamedIndividual IRI="#Pure_blood"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wizard"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#BelongsToHouse"/>
+            <Class IRI="#House"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Ghost"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HalfHumanHalfGiant"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Werewolf"/>
+        <Class IRI="#Species"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Ghost"/>
+        <Class IRI="#HalfHumanHalfGiant"/>
+        <Class IRI="#Human"/>
+        <Class IRI="#Werewolf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HalfBlood"/>
+        <Class IRI="#MuggleBlood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HalfBlood"/>
+        <Class IRI="#MuggleBorn"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HalfBlood"/>
+        <Class IRI="#PartHuman_HalfGiant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HalfBlood"/>
+        <Class IRI="#PureBlood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MuggleBlood"/>
+        <Class IRI="#MuggleBorn"/>
+        <Class IRI="#PureBlood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MuggleBlood"/>
+        <Class IRI="#PartHuman_HalfGiant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MuggleBorn"/>
+        <Class IRI="#PartHuman_HalfGiant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PartHuman_HalfGiant"/>
+        <Class IRI="#PureBlood"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Gryffindor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BloodStatus"/>
+        <NamedIndividual IRI="#Half_blood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Hufflepuff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BloodStatus"/>
+        <NamedIndividual IRI="#Muggle_blood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BloodStatus"/>
+        <NamedIndividual IRI="#Muggle_born"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BloodStatus"/>
+        <NamedIndividual IRI="#Part_Human_Half_giant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BloodStatus"/>
+        <NamedIndividual IRI="#Pure_blood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Ravenclaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Slytherin"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <NamedIndividual IRI="#Half_blood"/>
+        <NamedIndividual IRI="#Half_blood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <NamedIndividual IRI="#Muggle_blood"/>
+        <NamedIndividual IRI="#Muggle_blood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <NamedIndividual IRI="#Muggle_born"/>
+        <NamedIndividual IRI="#Muggle_born"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <NamedIndividual IRI="#Part_Human_Half_giant"/>
+        <NamedIndividual IRI="#Part_Human_Half_giant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <NamedIndividual IRI="#Pure_blood"/>
+        <NamedIndividual IRI="#Pure_blood"/>
+    </ObjectPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#BelongsToHouse"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#BelongsToSpecies"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEffect"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEyeColor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasHairColor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasIncantation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasJob"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLight"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPatronus"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSkills"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasWand"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCharacters"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BelongsToHouse"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BelongsToSpecies"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacters"/>
+        <Class IRI="#House"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#Spell"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEyeColor"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIncantation"/>
+        <Class IRI="#Spell"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasJob"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLight"/>
+        <Class IRI="#Spell"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPatronus"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSkills"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWand"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BelongsToHouse"/>
+        <Class IRI="#House"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BelongsToSpecies"/>
+        <Class IRI="#Species"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBloodStatus"/>
+        <Class IRI="#BloodStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacters"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#Effect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEyeColor"/>
+        <Class IRI="#EyeColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <Class IRI="#HairColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIncantation"/>
+        <Class IRI="#Incantation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasJob"/>
+        <Class IRI="#Job"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLight"/>
+        <Class IRI="#Light"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPatronus"/>
+        <Class IRI="#Patronus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSkills"/>
+        <Class IRI="#Skills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWand"/>
+        <Class IRI="#Wand"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasGender"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quidditch_1991_1992"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quidditch_1995_1996"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quidditch_1996_1997"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quiidditch_1997_1998"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGender"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quidditch_1991_1992"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quidditch_1995_1996"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quidditch_1996_1997"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quiidditch_1997_1998"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quidditch_1991_1992"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quidditch_1995_1996"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quidditch_1996_1997"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quiidditch_1997_1998"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BelongsToHouse</IRI>
+        <Literal>In harry potter movies, A charcater belongs to a certain house namely &quot;gryffindor&quot;, &quot;hufflepuff&quot;, &quot;ravenclaw&quot; , &quot;Slytherin&quot; 
+A character can only be a part of one of thse houses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BelongsToSpecies</IRI>
+        <Literal>Every character belongs to a species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HalfBlood</IRI>
+        <Literal>A wizard whose blood status is half-blood is classified as a half-blood wizard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MuggleBlood</IRI>
+        <Literal>A charcater with no wizard blood, is a Muggle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MuggleBorn</IRI>
+        <Literal>A wizard whose blood status is muggle-born is known to be a mugle-born wizard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PureBlood</IRI>
+        <Literal>a (character)wizard whose blood status is pureblood is a pure-blood wizard.
+made it a defined class because it has all the necessary and sufficient conditions to be classified as a &quot;Pure-blood&quot;</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

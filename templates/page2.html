@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> What are the effects of a spell that is a curse </title>
+    <link rel="stylesheet" type="text/css" href="../static/effectsOfSpell.css" />
+</head>
+<h2 class="title">
+  <center>
+    <br>
+    <p style="color:rgb(255, 255, 255);font-style:bold;font-size:20px">What are the effects of a spell that is a curse</p>
+    <br>
+    <p style="color:rgb(255, 255, 255);font-style:bold;font-size:18px">RESULTS:</p>
+    
+  </center>
+</h2>
+<body>
+
+  <table border="1" style="font-family:Georgia, Garamond, Serif;color:rgb(255, 255, 255);font-style:bold;">
+    <tr style="font-variant:small-caps;font-style:normal;color:rgb(255, 255, 255);font-style:bold;font-size:18px;">
+    <thead>
+      <th>SPELL</th>
+      <th>EFFECT</th>
+  </thead>
+  <tbody>
+      {% for row in queryRes %}
+
+      <tr>
+          <td>
+              {{ row["sub"] }}
+          </td>
+          <td>
+              {{ row["ob"] }}
+          </td>
+      </tr>
+
+      {% endfor %}
+  </tbody>
+  </table>
+</body>
+
+</html>

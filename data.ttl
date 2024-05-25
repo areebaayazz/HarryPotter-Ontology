@@ -1,0 +1,2055 @@
+@prefix : <http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies> a owl:Ontology .
+
+<http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#(Bill)WilliamArthurWeasley> a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Curse-BreakerforGringottsBank ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Highlyskilledcurse-breakerforGringottsWizardingBank_veryintelligent_pastHogwartsHeadBoy ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 true ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:AlbusPercivalWulfricBrianDumbledore a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Silver_formerlyauburn ;
+    :hasJob :Headmaster ;
+    :hasPatronus :Phoenix ;
+    :hasSkills :Consideredbymanytobeoneofthemostpowerfulwizardsofhistime ;
+    :hasWand :15ElderThestraltailhaircore ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:AliciaSpinnet a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Brown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Chaser ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:AnthonyGoldstein a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Grey ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Blonde ;
+    :hasJob :Student ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Prefect ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:ArthurWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Green ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :HeadoftheMisuseofMuggleArtefactsOffice ;
+    :hasPatronus :Weasel ;
+    :hasSkills :Muggleworldworks ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:BelongsToHouse a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment """In harry potter movies, A charcater belongs to a certain house namely "gryffindor", "hufflepuff", "ravenclaw" , "Slytherin" 
+A character can only be a part of one of thse houses""" ;
+    rdfs:domain :Character ;
+    rdfs:range :House .
+
+:BelongsToSpecies a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Every character belongs to a species" ;
+    rdfs:domain :Character ;
+    rdfs:range :Species .
+
+:BlastingCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Explosion ;
+    :hasIncantation :Confringo ;
+    :hasLight :FieryOrange .
+
+:BoggartBanishingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :TurnsaBoggartintosomethingamusing ;
+    :hasIncantation :Riddikulus ;
+    :hasLight :Unknown .
+
+:CharlesWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Grey ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Dragonologist ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Highlyskilleddragontrainer_one-timeGryffindorSeeker ;
+    :hasWand :12Ashunicorntailhair ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 false .
+
+:ChoChang a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Dark ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Swan ;
+    :hasSkills :Seeker ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:ColinCreevey a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Mousy ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Photography ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:CormacMcLaggen a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Blond ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :QuidditchKeeper ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 true .
+
+:CruciatusCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Excruciatingpain ;
+    :hasIncantation :Crucio ;
+    :hasLight :Red .
+
+:DeanThomas a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :Brown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Chaser ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 true .
+
+:DisarmingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Disarmsanopponent ;
+    :hasIncantation :Expelliarmus ;
+    :hasLight :Scarlet .
+
+:DracoMalfoy a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Slytherin ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Grey ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :WhiteBlonde ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Prefect ;
+    :hasWand :10Hawthornunicornhair ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:EngorgementCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Causesswelling ;
+    :hasIncantation :Engorgio ;
+    :hasLight :Icyblue .
+
+:ExplodingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Smallexplosion ;
+    :hasIncantation :Bombarda ;
+    :hasLight :Unknown .
+
+:ExpulsoCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Blowsthingsup ;
+    :hasIncantation :Expulso ;
+    :hasLight :Blue .
+
+:FireMakingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Conjuresflames ;
+    :hasIncantation :Incendio ;
+    :hasLight :Orange .
+
+:FreezingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Stopsmovementandactionsofthetarget ;
+    :hasIncantation :Immobulus ;
+    :hasLight :Blue .
+
+:FullBodyBindCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :TemporaryParalysis ;
+    :hasIncantation :PetrificusTotalus ;
+    :hasLight :White .
+
+:GarrickOllivander a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Silvery ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :Wandmaker ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Anincomparableunderstandingofwandcraft ;
+    :hasWand :12_Hornbeamdragonheartstring ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:GeneralCounterSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Terminatesallspelleffects ;
+    :hasIncantation :Finite ;
+    :hasLight :Red .
+
+:GeorgeWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Beater ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:GilderoyLockhart a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Blond ;
+    :hasJob :DefenceAgainsttheDarkArts\(1992-1993\) ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :None ;
+    :hasWand :9Cherrydragonheartstring ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 true .
+
+:Ginevra\(Ginny\)MollyWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :BrightBrown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Student ;
+    :hasPatronus :Horse ;
+    :hasSkills :Chaser_Bat-Bogeyhex ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:GregoryGoyle a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Slytherin ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Brown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Beater ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:HalfBlood a owl:Class ;
+    rdfs:comment "A wizard whose blood status is half-blood is classified as a half-blood wizard" ;
+    owl:disjointWith :MuggleBlood,
+        :MuggleBorn,
+        :PartHuman_HalfGiant,
+        :PureBlood ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Character [ a owl:Restriction ;
+                        owl:hasValue :Half_blood ;
+                        owl:onProperty :hasBloodStatus ] ) ] .
+
+:HannahAbbott a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Hufflepuff ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Blonde ;
+    :hasJob :Student ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Defensivespells ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:HarryJamesPotter a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :BrightGreen ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Stag ;
+    :hasSkills :Parseltongue_DefenceAgainsttheDarkArts_Seeker ;
+    :hasWand :11Hollyphoenixfeather ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 true .
+
+:HermioneJeanGranger a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :Brown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Brown ;
+    :hasJob :Student ;
+    :hasPatronus :Otter ;
+    :hasSkills :Almosteverything ;
+    :hasWand :10_vinewooddragonheartstring ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:HumanPresenceRevealingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Revealshumanpresence ;
+    :hasIncantation :HomenumRevelio ;
+    :hasLight :Unknown .
+
+:ImpedimentJinx a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Hindersmovement ;
+    :hasIncantation :Impedimenta ;
+    :hasLight :Turquoise .
+
+:ImperiusCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Totalcontroloverthevictim ;
+    :hasIncantation :Imperio ;
+    :hasLight :Unknown .
+
+:IncarcerousSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Bindstargetinropes ;
+    :hasIncantation :Incarcerous ;
+    :hasLight :Unknown .
+
+:JamesPotter a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Hazel ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Unknown ;
+    :hasPatronus :Stag ;
+    :hasSkills :Animagus_Seeker ;
+    :hasWand :11Mahoganyunknowncore ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:JustinFinch-Fletchley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Hufflepuff ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :Brown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Student ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Beater ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:KatieBell a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Brown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Chaser ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:KillingCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Instantaneousdeath ;
+    :hasIncantation :AvadaKedavra ;
+    :hasLight :Green .
+
+:LaunchAnObjectUpInToTheAir a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Rocketstargetupward ;
+    :hasIncantation :AlarteAscendare ;
+    :hasLight :Red .
+
+:LavenderBrown a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Blond ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Divination ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 false .
+
+:LegLockerCurse a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Stickslegstogether ;
+    :hasIncantation :LocomotorMortis ;
+    :hasLight :Purple .
+
+:LevitationCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Makesobjectsfly ;
+    :hasIncantation :WingardiumLeviosa ;
+    :hasLight :Unknown .
+
+:LilyJ.Potter a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :BrightGreen ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Auburn ;
+    :hasJob :Unknown ;
+    :hasPatronus :Doe ;
+    :hasSkills :None ;
+    :hasWand :10Î_Willowunknowncore ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 true .
+
+:LockingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Locksdoors ;
+    :hasIncantation :Colloportus ;
+    :hasLight :Unknown .
+
+:LocomotionCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Movesobjectsinmidair ;
+    :hasIncantation :Locomotor ;
+    :hasLight :Unknown .
+
+:LumosSolemSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Producessunlight ;
+    :hasIncantation :LumosSolem ;
+    :hasLight :Brightyellow .
+
+:LunaLovegood a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :PaleSilvery ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :DirtyBlonde ;
+    :hasJob :Student ;
+    :hasPatronus :Hare ;
+    :hasSkills :SpottingNargles ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:MariettaEdgecombe a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Grey ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :ReddishBlonde ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills <http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#CoveringupthespotsthatblightherfaceafterbetrayingDumbledore'sArmy> ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:MemoryCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Erasesmemories ;
+    :hasIncantation :Obliviate ;
+    :hasLight :Green .
+
+:MendingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Fixesbrokenobjects ;
+    :hasIncantation :Reparo ;
+    :hasLight :Unknown .
+
+:MichaelCorner a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Squirrel ;
+    :hasSkills :Potions ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:MinervaMcGonagall a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Green ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :ProfessorofTransfiguration_HeadofGryffindor ;
+    :hasPatronus :Cat ;
+    :hasSkills :Animagus ;
+    :hasWand :9_Firdragonheartstring ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:MollyWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :BrightBrown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Unknown ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Householdspells_healingmagic ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:MuffliatoCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Concealssound ;
+    :hasIncantation :Muffliato ;
+    :hasLight :Unknown .
+
+:MuggleRepellingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :RepelsMuggles ;
+    :hasIncantation :RepelloMuggletum ;
+    :hasLight :Haze .
+
+:MyrtleElizabethWarren a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Ghost ;
+    :hasBloodStatus :Muggle_born ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :None ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:NevilleLongbottom a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Blond ;
+    :hasJob :Student ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Herbology ;
+    :hasWand :13Cherryunicornhair ;
+    :quidditch_1991_1992 true ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:OliverWood a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Keeper_CaptainoftheGryffindorQuidditchteam ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:OppugnoJinx a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Assaultstargetwithdirectedobject ;
+    :hasIncantation :Oppugno ;
+    :hasLight :Unknown .
+
+:PadmaPatil a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Dark ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Dark ;
+    :hasJob :Student ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :Prefect ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:ParvatiPatil a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Dark ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Dark ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Divination ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:PatronusCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Conjuresaspiritguardian ;
+    :hasIncantation :ExpectoPatronum ;
+    :hasLight :Silver .
+
+:PercyIgnatiusWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Student_Prefect_PersonalassistanttoBartyCrouchSnr ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Intelligent_hard-working_amodelstudent ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:PeterPettigrew a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Colourlessandbalding ;
+    :hasJob :TheServantofLordVoldemort ;
+    :hasPatronus :None ;
+    :hasSkills :Animagus ;
+    :hasWand :9_Chestnutdragonheartstring ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:PetuniaDursley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :None ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Muggle_blood ;
+    :hasEyeColor :Brown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Blonde ;
+    :hasJob :None ;
+    :hasPatronus :None ;
+    :hasSkills :None ;
+    :hasWand :None ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:QuirinusQuirrell a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :DefenceAgainsttheDarkArts\(1991-1992\) ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :LearnedinthetheoryofDefensiveMagic_lessadeptinthepractise ;
+    :hasWand :9Alderunicornhairbendy ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:RemusJohnLupin a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Werewolf ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Green ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Lightbrownfleckedwithgrey ;
+    :hasJob :ProfessorofDefenceAgainsttheDarkArts ;
+    :hasPatronus :Wolf ;
+    :hasSkills :ExceptionallygiftedinDefenceAgainsttheDarkArts ;
+    :hasWand :10_Cypressunicornhair ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:RevelioCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Revealssecretsaboutapersonorobject ;
+    :hasIncantation :Revelio ;
+    :hasLight :Blue .
+
+:ReverseSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Showsthepreviousspellscastbyawand ;
+    :hasIncantation :PrioriIncantatem ;
+    :hasLight :Gold .
+
+:RevulsionJinx a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Forcestargettoletgo ;
+    :hasIncantation :Relashio ;
+    :hasLight :Purple .
+
+:RomildaVane a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Dark ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :SpikingChocolateCauldronswithlovepotion ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:RonaldBiliusWeasley a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Blue ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Red ;
+    :hasJob :Student ;
+    :hasPatronus :JackRussellterrier ;
+    :hasSkills :Wizardchess_Quidditchgoalkeeping ;
+    :hasWand :12Ashunicorntailhair ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 true ;
+    :quidditch_1996_1997 true .
+
+:RubeusHagrid a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :HalfHumanHalfGiant ;
+    :hasBloodStatus :Part_Human_Half_giant ;
+    :hasEyeColor :Black ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :KeeperofKeysandGroundsProfessorofCareofMagicalCreatures ;
+    :hasPatronus :None ;
+    :hasSkills :Resistanttostunningspells_aboveaveragestrength_crossbowmanship ;
+    :hasWand :16Oakunknowncore ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:SeamusFinnigan a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Sandy ;
+    :hasJob :Student ;
+    :hasPatronus :Fox ;
+    :hasSkills :Pyrotechnics ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:SeveringCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Cutsobjects ;
+    :hasIncantation :Diffindo ;
+    :hasLight :Lightgreen .
+
+:SeverusSnape a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Slytherin ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Black ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :ProfessorofPotions_HeadofSlytherin ;
+    :hasPatronus :Doe ;
+    :hasSkills :ExtremelyskilledatpotionsandOcclumency ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 true .
+
+:ShieldCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Reflectsspellsandblocksphysicalforces ;
+    :hasIncantation :Protego ;
+    :hasLight :Unknown .
+
+:ShrinkingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Shrinkstarget ;
+    :hasIncantation :Reducio ;
+    :hasLight :Purple .
+
+:SiriusBlack a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Gryffindor ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Grey ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Unknown ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Animagus_nonverbalmagic_Charms ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:SlowingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect <http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#Slowsorstopstarget'svelocity> ;
+    :hasIncantation :ArrestoMomentum ;
+    :hasLight :Unknown .
+
+:SnakeSummonsSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Conjuressnake ;
+    :hasIncantation :Serpensortia ;
+    :hasLight :White .
+
+:SnakeVanishingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Vanishessnakes ;
+    :hasIncantation :ViperaEvanesca ;
+    :hasLight :Blacksmoke .
+
+:SpiderRepellingspell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Repelsspiders ;
+    :hasIncantation :AraniaExumai ;
+    :hasLight :Blue .
+
+:StunningSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Knocksouttarget ;
+    :hasIncantation :Stupefy ;
+    :hasLight :Red .
+
+:SummoningCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Summonsanobject ;
+    :hasIncantation :Accio ;
+    :hasLight :Unknown .
+
+:SybillPatriciaTrelawney a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Half_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Female"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :ProfessorofDivination ;
+    :hasPatronus :Non-corporeal ;
+    :hasSkills :ASeer ;
+    :hasWand <http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#9_hazelunicornhaircore> ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:TerryBoot a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Ravenclaw ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Unknown ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Unknown ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Potions ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:TicklingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Ticklesandweakens ;
+    :hasIncantation :Rictusempra ;
+    :hasLight :Silver .
+
+:UnlockingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Unlockstarget ;
+    :hasIncantation :Alohomora ;
+    :hasLight :Blue .
+
+:VincentCrabbe a :Character,
+        owl:NamedIndividual ;
+    :BelongsToHouse :Slytherin ;
+    :BelongsToSpecies :Human ;
+    :hasBloodStatus :Pure_blood ;
+    :hasEyeColor :Black ;
+    :hasGender "Male"^^xsd:string ;
+    :hasHairColor :Black ;
+    :hasJob :Student ;
+    :hasPatronus :Unknown ;
+    :hasSkills :Beater ;
+    :hasWand :Unknown ;
+    :quidditch_1991_1992 false ;
+    :quidditch_1995_1996 false ;
+    :quidditch_1996_1997 false .
+
+:WandExtinguishingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Extinguisheswandlight ;
+    :hasIncantation :Nox ;
+    :hasLight :Unknown .
+
+:WandLightingCharm a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Illuminatesthewandtip ;
+    :hasIncantation :Lumos ;
+    :hasLight :White .
+
+:WaterMakingSpell a :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Conjureswater ;
+    :hasIncantation :Aguamenti ;
+    :hasLight :Icyblue .
+
+:hasCharacters a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :House ;
+    rdfs:range :Character .
+
+:hasEffect a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Spell ;
+    rdfs:range :Effect .
+
+:hasEyeColor a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :EyeColor .
+
+:hasGender a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:string .
+
+:hasHairColor a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :HairColor .
+
+:hasIncantation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Spell ;
+    rdfs:range :Incantation .
+
+:hasJob a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :Job .
+
+:hasLight a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Spell ;
+    rdfs:range :Light .
+
+:hasPatronus a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :Patronus .
+
+:hasSkills a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :Skills .
+
+:hasWand a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :Wand .
+
+:quidditch_1991_1992 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:boolean .
+
+:quidditch_1995_1996 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:boolean .
+
+:quidditch_1996_1997 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:boolean .
+
+:quiidditch_1997_1998 a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:boolean .
+
+:10Hawthornunicornhair a :Wand,
+        owl:NamedIndividual .
+
+:10_Cypressunicornhair a :Wand,
+        owl:NamedIndividual .
+
+:10_vinewooddragonheartstring a :Wand,
+        owl:NamedIndividual .
+
+:10Î_Willowunknowncore a :Wand,
+        owl:NamedIndividual .
+
+:11Hollyphoenixfeather a :Wand,
+        owl:NamedIndividual .
+
+:11Mahoganyunknowncore a :Wand,
+        owl:NamedIndividual .
+
+:12_Hornbeamdragonheartstring a :Wand,
+        owl:NamedIndividual .
+
+:13Cherryunicornhair a :Wand,
+        owl:NamedIndividual .
+
+:15ElderThestraltailhaircore a :Wand,
+        owl:NamedIndividual .
+
+:16Oakunknowncore a :Wand,
+        owl:NamedIndividual .
+
+:9Alderunicornhairbendy a :Wand,
+        owl:NamedIndividual .
+
+:9Cherrydragonheartstring a :Wand,
+        owl:NamedIndividual .
+
+:9_Chestnutdragonheartstring a :Wand,
+        owl:NamedIndividual .
+
+:9_Firdragonheartstring a :Wand,
+        owl:NamedIndividual .
+
+<http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#9_hazelunicornhaircore> a :Wand,
+        owl:NamedIndividual .
+
+:ASeer a :Skills,
+        owl:NamedIndividual .
+
+:Accio a :Incantation,
+        owl:NamedIndividual .
+
+:Aguamenti a :Incantation,
+        owl:NamedIndividual .
+
+:AlarteAscendare a :Incantation,
+        owl:NamedIndividual .
+
+:Almosteverything a :Skills,
+        owl:NamedIndividual .
+
+:Alohomora a :Incantation,
+        owl:NamedIndividual .
+
+:Animagus_Seeker a :Skills,
+        owl:NamedIndividual .
+
+:Animagus_nonverbalmagic_Charms a :Skills,
+        owl:NamedIndividual .
+
+:Animatestarget a :Effect,
+        owl:NamedIndividual .
+
+:Anincomparableunderstandingofwandcraft a :Skills,
+        owl:NamedIndividual .
+
+:AraniaExumai a :Incantation,
+        owl:NamedIndividual .
+
+:ArrestoMomentum a :Incantation,
+        owl:NamedIndividual .
+
+:Assaultstargetwithdirectedobject a :Effect,
+        owl:NamedIndividual .
+
+:Auburn a :HairColor,
+        owl:NamedIndividual .
+
+:AvadaKedavra a :Incantation,
+        owl:NamedIndividual .
+
+:Bindstargetinropes a :Effect,
+        owl:NamedIndividual .
+
+:Blacksmoke a :Light,
+        owl:NamedIndividual .
+
+:Blowsthingsup a :Effect,
+        owl:NamedIndividual .
+
+:Bombarda a :Incantation,
+        owl:NamedIndividual .
+
+:BrackiumEmendo a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Mendsbones ;
+    :hasIncantation :BrackiumEmendo ;
+    :hasLight :Blue .
+
+:Brightyellow a :Light,
+        owl:NamedIndividual .
+
+:Cat a :Patronus,
+        owl:NamedIndividual .
+
+:Causesswelling a :Effect,
+        owl:NamedIndividual .
+
+:Chaser_Bat-Bogeyhex a :Skills,
+        owl:NamedIndividual .
+
+:CistemAperio a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Openschests ;
+    :hasIncantation :CistemAperio ;
+    :hasLight :White .
+
+:Colloportus a :Incantation,
+        owl:NamedIndividual .
+
+:Colourlessandbalding a :HairColor,
+        owl:NamedIndividual .
+
+:Concealssound a :Effect,
+        owl:NamedIndividual .
+
+:Confringo a :Incantation,
+        owl:NamedIndividual .
+
+:Conjuresaspiritguardian a :Effect,
+        owl:NamedIndividual .
+
+:Conjuresflames a :Effect,
+        owl:NamedIndividual .
+
+:Conjuressnake a :Effect,
+        owl:NamedIndividual .
+
+:Conjureswater a :Effect,
+        owl:NamedIndividual .
+
+:Consideredbymanytobeoneofthemostpowerfulwizardsofhistime a :Skills,
+        owl:NamedIndividual .
+
+<http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#CoveringupthespotsthatblightherfaceafterbetrayingDumbledore'sArmy> a :Skills,
+        owl:NamedIndividual .
+
+:Crucio a :Incantation,
+        owl:NamedIndividual .
+
+:Crystalclear a :Light,
+        owl:NamedIndividual .
+
+:Curse-BreakerforGringottsBank a :Job,
+        owl:NamedIndividual .
+
+:Cutsobjects a :Effect,
+        owl:NamedIndividual .
+
+:DefenceAgainsttheDarkArts\(1991-1992\) a :Job,
+        owl:NamedIndividual .
+
+:DefenceAgainsttheDarkArts\(1992-1993\) a :Job,
+        owl:NamedIndividual .
+
+:Defensivespells a :Skills,
+        owl:NamedIndividual .
+
+:Diffindo a :Incantation,
+        owl:NamedIndividual .
+
+:DirtyBlonde a :HairColor,
+        owl:NamedIndividual .
+
+:Disarmsanopponent a :Effect,
+        owl:NamedIndividual .
+
+:Dissendium a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Revealssecretpassages ;
+    :hasIncantation :Dissendium ;
+    :hasLight :Unknown .
+
+:Dragonologist a :Job,
+        owl:NamedIndividual .
+
+:Engorgio a :Incantation,
+        owl:NamedIndividual .
+
+:Episkey a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Healsminorinjuries ;
+    :hasIncantation :Episkey ;
+    :hasLight :Unknown .
+
+:Erasesmemories a :Effect,
+        owl:NamedIndividual .
+
+:ExceptionallygiftedinDefenceAgainsttheDarkArts a :Skills,
+        owl:NamedIndividual .
+
+:Excruciatingpain a :Effect,
+        owl:NamedIndividual .
+
+:ExpectoPatronum a :Incantation,
+        owl:NamedIndividual .
+
+:Expelliarmus a :Incantation,
+        owl:NamedIndividual .
+
+:Explosion a :Effect,
+        owl:NamedIndividual .
+
+:Expulso a :Incantation,
+        owl:NamedIndividual .
+
+:Extinguisheswandlight a :Effect,
+        owl:NamedIndividual .
+
+:ExtremelyskilledatpotionsandOcclumency a :Skills,
+        owl:NamedIndividual .
+
+:FieryOrange a :Light,
+        owl:NamedIndividual .
+
+:Finite a :Incantation,
+        owl:NamedIndividual .
+
+:Fixesbrokenobjects a :Effect,
+        owl:NamedIndividual .
+
+:Forcestargettoletgo a :Effect,
+        owl:NamedIndividual .
+
+:Fox a :Patronus,
+        owl:NamedIndividual .
+
+:Ghost a owl:Class ;
+    rdfs:subClassOf :Species .
+
+:Gold a :Light,
+        owl:NamedIndividual .
+
+:HalfHumanHalfGiant a owl:Class ;
+    rdfs:subClassOf :Species .
+
+:Hare a :Patronus,
+        owl:NamedIndividual .
+
+:Hazel a :EyeColor,
+        owl:NamedIndividual .
+
+:Headmaster a :Job,
+        owl:NamedIndividual .
+
+:HeadoftheMisuseofMuggleArtefactsOffice a :Job,
+        owl:NamedIndividual .
+
+:Healsminorinjuries a :Effect,
+        owl:NamedIndividual .
+
+:Herbology a :Skills,
+        owl:NamedIndividual .
+
+:Hexdeflection a :Effect,
+        owl:NamedIndividual .
+
+:Highlyskilledcurse-breakerforGringottsWizardingBank_veryintelligent_pastHogwartsHeadBoy a :Skills,
+        owl:NamedIndividual .
+
+:Highlyskilleddragontrainer_one-timeGryffindorSeeker a :Skills,
+        owl:NamedIndividual .
+
+:Hindersmovement a :Effect,
+        owl:NamedIndividual .
+
+:HomenumRevelio a :Incantation,
+        owl:NamedIndividual .
+
+:Horse a :Patronus,
+        owl:NamedIndividual .
+
+:Householdspells_healingmagic a :Skills,
+        owl:NamedIndividual .
+
+:Illuminatesthewandtip a :Effect,
+        owl:NamedIndividual .
+
+:Immobulus a :Incantation,
+        owl:NamedIndividual .
+
+:Impedimenta a :Incantation,
+        owl:NamedIndividual .
+
+:Imperio a :Incantation,
+        owl:NamedIndividual .
+
+:Incarcerous a :Incantation,
+        owl:NamedIndividual .
+
+:Incendio a :Incantation,
+        owl:NamedIndividual .
+
+:Instantaneousdeath a :Effect,
+        owl:NamedIndividual .
+
+:Intelligent_hard-working_amodelstudent a :Skills,
+        owl:NamedIndividual .
+
+:JackRussellterrier a :Patronus,
+        owl:NamedIndividual .
+
+:Keeper_CaptainoftheGryffindorQuidditchteam a :Skills,
+        owl:NamedIndividual .
+
+:KeeperofKeysandGroundsProfessorofCareofMagicalCreatures a :Job,
+        owl:NamedIndividual .
+
+:Knocksouttarget a :Effect,
+        owl:NamedIndividual .
+
+:Laceratestarget a :Effect,
+        owl:NamedIndividual .
+
+:LearnedinthetheoryofDefensiveMagic_lessadeptinthepractise a :Skills,
+        owl:NamedIndividual .
+
+:Levicorpus a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Suspendspeoplebytheankles ;
+    :hasIncantation :Levicorpus ;
+    :hasLight :Green .
+
+:Lightbrownfleckedwithgrey a :HairColor,
+        owl:NamedIndividual .
+
+:Lightgreen a :Light,
+        owl:NamedIndividual .
+
+:Locksdoors a :Effect,
+        owl:NamedIndividual .
+
+:Locomotor a :Incantation,
+        owl:NamedIndividual .
+
+:LocomotorMortis a :Incantation,
+        owl:NamedIndividual .
+
+:Lumos a :Incantation,
+        owl:NamedIndividual .
+
+:LumosMaxima a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Producesbrightlight ;
+    :hasIncantation :LumosMaxima ;
+    :hasLight :White .
+
+:LumosSolem a :Incantation,
+        owl:NamedIndividual .
+
+:Makesobjectsfly a :Effect,
+        owl:NamedIndividual .
+
+:Mendsbones a :Effect,
+        owl:NamedIndividual .
+
+:Mousy a :HairColor,
+        owl:NamedIndividual .
+
+:Movesobjectsinmidair a :Effect,
+        owl:NamedIndividual .
+
+:Muffliato a :Incantation,
+        owl:NamedIndividual .
+
+:Muggleworldworks a :Skills,
+        owl:NamedIndividual .
+
+:Nox a :Incantation,
+        owl:NamedIndividual .
+
+:Obliviate a :Incantation,
+        owl:NamedIndividual .
+
+:OculusReparo a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Repairsglasses ;
+    :hasIncantation :OculusReparo ;
+    :hasLight :Unknown .
+
+:Openschests a :Effect,
+        owl:NamedIndividual .
+
+:Oppugno a :Incantation,
+        owl:NamedIndividual .
+
+:Orange a :Light,
+        owl:NamedIndividual .
+
+:Otter a :Patronus,
+        owl:NamedIndividual .
+
+:PaleSilvery a :EyeColor,
+        owl:NamedIndividual .
+
+:Parseltongue_DefenceAgainsttheDarkArts_Seeker a :Skills,
+        owl:NamedIndividual .
+
+:PeskipiksiPesternomi a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :supposedlycapturespixies ;
+    :hasIncantation :PeskipiksiPesternomi ;
+    :hasLight :Unknown .
+
+:PetrificusTotalus a :Incantation,
+        owl:NamedIndividual .
+
+:Phoenix a :Patronus,
+        owl:NamedIndividual .
+
+:Photography a :Skills,
+        owl:NamedIndividual .
+
+:PiertotumLocomotor a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Animatestarget ;
+    :hasIncantation :PiertotumLocomotor ;
+    :hasLight :Green .
+
+:Portus a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :TurnsobjectintoPortkey ;
+    :hasIncantation :Portus ;
+    :hasLight :Blue .
+
+:PrioriIncantatem a :Incantation,
+        owl:NamedIndividual .
+
+:Producesbrightlight a :Effect,
+        owl:NamedIndividual .
+
+:Producessunlight a :Effect,
+        owl:NamedIndividual .
+
+:ProfessorofDefenceAgainsttheDarkArts a :Job,
+        owl:NamedIndividual .
+
+:ProfessorofDivination a :Job,
+        owl:NamedIndividual .
+
+:ProfessorofPotions_HeadofSlytherin a :Job,
+        owl:NamedIndividual .
+
+:ProfessorofTransfiguration_HeadofGryffindor a :Job,
+        owl:NamedIndividual .
+
+:Protego a :Incantation,
+        owl:NamedIndividual .
+
+:ProtegoMaxima a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Summonsalargeprotectivebarrier ;
+    :hasIncantation :ProtegoMaxima ;
+    :hasLight :White .
+
+:Protegototalum a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Shieldsanarea ;
+    :hasIncantation :Protegototalum ;
+    :hasLight :Unknown .
+
+:Pyrotechnics a :Skills,
+        owl:NamedIndividual .
+
+:QuidditchKeeper a :Skills,
+        owl:NamedIndividual .
+
+:ReddishBlonde a :HairColor,
+        owl:NamedIndividual .
+
+:Reducio a :Incantation,
+        owl:NamedIndividual .
+
+:Reflectsspellsandblocksphysicalforces a :Effect,
+        owl:NamedIndividual .
+
+:Relashio a :Incantation,
+        owl:NamedIndividual .
+
+:Repairsglasses a :Effect,
+        owl:NamedIndividual .
+
+:Reparo a :Incantation,
+        owl:NamedIndividual .
+
+:RepelloInimicum a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Repelsenemies_fusedwithProtegoMaximaandFiantoDuri ;
+    :hasIncantation :RepelloInimicum ;
+    :hasLight :Unknown .
+
+:RepelloMuggletum a :Incantation,
+        owl:NamedIndividual .
+
+:RepelsMuggles a :Effect,
+        owl:NamedIndividual .
+
+:Repelsenemies_fusedwithProtegoMaximaandFiantoDuri a :Effect,
+        owl:NamedIndividual .
+
+:Repelsspiders a :Effect,
+        owl:NamedIndividual .
+
+:Resistanttostunningspells_aboveaveragestrength_crossbowmanship a :Skills,
+        owl:NamedIndividual .
+
+:Revealshumanpresence a :Effect,
+        owl:NamedIndividual .
+
+:Revealssecretpassages a :Effect,
+        owl:NamedIndividual .
+
+:Revealssecretsaboutapersonorobject a :Effect,
+        owl:NamedIndividual .
+
+:Revelio a :Incantation,
+        owl:NamedIndividual .
+
+:Rictusempra a :Incantation,
+        owl:NamedIndividual .
+
+:Riddikulus a :Incantation,
+        owl:NamedIndividual .
+
+:Rocketstargetupward a :Effect,
+        owl:NamedIndividual .
+
+:Salviohexia a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Hexdeflection ;
+    :hasIncantation :Salviohexia ;
+    :hasLight :Haze .
+
+:Sandy a :HairColor,
+        owl:NamedIndividual .
+
+:Scarlet a :Light,
+        owl:NamedIndividual .
+
+:Sectumsempra a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Laceratestarget ;
+    :hasIncantation :Sectumsempra ;
+    :hasLight :White .
+
+:Seeker a :Skills,
+        owl:NamedIndividual .
+
+:Serpensortia a :Incantation,
+        owl:NamedIndividual .
+
+:Shieldsanarea a :Effect,
+        owl:NamedIndividual .
+
+:Showsthepreviousspellscastbyawand a :Effect,
+        owl:NamedIndividual .
+
+:Shrinkstarget a :Effect,
+        owl:NamedIndividual .
+
+:Silver_formerlyauburn a :HairColor,
+        owl:NamedIndividual .
+
+:Silvery a :EyeColor,
+        owl:NamedIndividual .
+
+<http://www.semanticweb.org/ana/ontologies/2022/11/HarryPotterMovies#Slowsorstopstarget'svelocity> a :Effect,
+        owl:NamedIndividual .
+
+:Smallexplosion a :Effect,
+        owl:NamedIndividual .
+
+:SpikingChocolateCauldronswithlovepotion a :Skills,
+        owl:NamedIndividual .
+
+:SpottingNargles a :Skills,
+        owl:NamedIndividual .
+
+:Squirrel a :Patronus,
+        owl:NamedIndividual .
+
+:Stickslegstogether a :Effect,
+        owl:NamedIndividual .
+
+:Stopsmovementandactionsofthetarget a :Effect,
+        owl:NamedIndividual .
+
+:Student_Prefect_PersonalassistanttoBartyCrouchSnr a :Job,
+        owl:NamedIndividual .
+
+:Stupefy a :Incantation,
+        owl:NamedIndividual .
+
+:Summonsalargeprotectivebarrier a :Effect,
+        owl:NamedIndividual .
+
+:Summonsanobject a :Effect,
+        owl:NamedIndividual .
+
+:Suspendspeoplebytheankles a :Effect,
+        owl:NamedIndividual .
+
+:Swan a :Patronus,
+        owl:NamedIndividual .
+
+:TemporaryParalysis a :Effect,
+        owl:NamedIndividual .
+
+:Terminatesallspelleffects a :Effect,
+        owl:NamedIndividual .
+
+:TheServantofLordVoldemort a :Job,
+        owl:NamedIndividual .
+
+:Ticklesandweakens a :Effect,
+        owl:NamedIndividual .
+
+:Totalcontroloverthevictim a :Effect,
+        owl:NamedIndividual .
+
+:Transformsanimalsintowatergoblets a :Effect,
+        owl:NamedIndividual .
+
+:TurnsaBoggartintosomethingamusing a :Effect,
+        owl:NamedIndividual .
+
+:TurnsobjectintoPortkey a :Effect,
+        owl:NamedIndividual .
+
+:Turquoise a :Light,
+        owl:NamedIndividual .
+
+:Unlockstarget a :Effect,
+        owl:NamedIndividual .
+
+:Vanishessnakes a :Effect,
+        owl:NamedIndividual .
+
+:VeraVerto a :Incantation,
+        :Spell,
+        owl:NamedIndividual ;
+    :hasEffect :Transformsanimalsintowatergoblets ;
+    :hasIncantation :VeraVerto ;
+    :hasLight :Crystalclear .
+
+:ViperaEvanesca a :Incantation,
+        owl:NamedIndividual .
+
+:Wandmaker a :Job,
+        owl:NamedIndividual .
+
+:Weasel a :Patronus,
+        owl:NamedIndividual .
+
+:Werewolf a owl:Class ;
+    rdfs:subClassOf :Species .
+
+:WhiteBlonde a :HairColor,
+        owl:NamedIndividual .
+
+:WingardiumLeviosa a :Incantation,
+        owl:NamedIndividual .
+
+:Wizardchess_Quidditchgoalkeeping a :Skills,
+        owl:NamedIndividual .
+
+:Wolf a :Patronus,
+        owl:NamedIndividual .
+
+:supposedlycapturespixies a :Effect,
+        owl:NamedIndividual .
+
+:12Ashunicorntailhair a :Wand,
+        owl:NamedIndividual .
+
+:Animagus a :Skills,
+        owl:NamedIndividual .
+
+:BrightBrown a :EyeColor,
+        owl:NamedIndividual .
+
+:BrightGreen a :EyeColor,
+        owl:NamedIndividual .
+
+:Divination a :Skills,
+        owl:NamedIndividual .
+
+:Doe a :Patronus,
+        owl:NamedIndividual .
+
+:Haze a :Light,
+        owl:NamedIndividual .
+
+:Hufflepuff a :House,
+        owl:NamedIndividual .
+
+:Icyblue a :Light,
+        owl:NamedIndividual .
+
+:MuggleBlood a owl:Class ;
+    rdfs:comment "A charcater with no wizard blood, is a Muggle" ;
+    owl:disjointWith :PartHuman_HalfGiant ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Character [ a owl:Restriction ;
+                        owl:hasValue :Muggle_blood ;
+                        owl:onProperty :hasBloodStatus ] ) ] .
+
+:MuggleBorn a owl:Class ;
+    rdfs:comment "A wizard whose blood status is muggle-born is known to be a mugle-born wizard" ;
+    owl:disjointWith :PartHuman_HalfGiant ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Character [ a owl:Restriction ;
+                        owl:hasValue :Muggle_born ;
+                        owl:onProperty :hasBloodStatus ] ) ] .
+
+:Potions a :Skills,
+        owl:NamedIndividual .
+
+:Silver a :Light,
+        owl:NamedIndividual .
+
+:Stag a :Patronus,
+        owl:NamedIndividual .
+
+:Blonde a :HairColor,
+        owl:NamedIndividual .
+
+:Chaser a :Skills,
+        owl:NamedIndividual .
+
+:Muggle_blood a :BloodStatus,
+        owl:NamedIndividual ;
+    :hasBloodStatus :Muggle_blood .
+
+:PartHuman_HalfGiant a owl:Class ;
+    owl:disjointWith :PureBlood ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Character [ a owl:Restriction ;
+                        owl:hasValue :Part_Human_Half_giant ;
+                        owl:onProperty :hasBloodStatus ] ) ] .
+
+:Part_Human_Half_giant a :BloodStatus,
+        owl:NamedIndividual ;
+    :hasBloodStatus :Part_Human_Half_giant .
+
+:Prefect a :Skills,
+        owl:NamedIndividual .
+
+:PureBlood a owl:Class ;
+    rdfs:comment """a (character)wizard whose blood status is pureblood is a pure-blood wizard.
+made it a defined class because it has all the necessary and sufficient conditions to be classified as a "Pure-blood\"""" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Character [ a owl:Restriction ;
+                        owl:hasValue :Pure_blood ;
+                        owl:onProperty :hasBloodStatus ] ) ] .
+
+:Purple a :Light,
+        owl:NamedIndividual .
+
+:Beater a :Skills,
+        owl:NamedIndividual .
+
+:Blond a :HairColor,
+        owl:NamedIndividual .
+
+:Slytherin a :House,
+        owl:NamedIndividual .
+
+:Grey a :EyeColor,
+        owl:NamedIndividual .
+
+:Species a owl:Class .
+
+:hasBloodStatus a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Character ;
+    rdfs:range :BloodStatus .
+
+:BloodStatus a owl:Class .
+
+:Dark a :EyeColor,
+        :HairColor,
+        owl:NamedIndividual .
+
+:Green a :EyeColor,
+        :Light,
+        owl:NamedIndividual .
+
+:House a owl:Class .
+
+:White a :Light,
+        owl:NamedIndividual .
+
+:Muggle_born a :BloodStatus,
+        owl:NamedIndividual ;
+    :hasBloodStatus :Muggle_born .
+
+:Non-corporeal a :Patronus,
+        owl:NamedIndividual .
+
+:None a :House,
+        :Job,
+        :Patronus,
+        :Skills,
+        :Wand,
+        owl:NamedIndividual .
+
+:Ravenclaw a :House,
+        owl:NamedIndividual .
+
+:Brown a :EyeColor,
+        :HairColor,
+        owl:NamedIndividual .
+
+:EyeColor a owl:Class .
+
+:Red a :HairColor,
+        :Light,
+        owl:NamedIndividual .
+
+:Black a :EyeColor,
+        :HairColor,
+        owl:NamedIndividual .
+
+:Blue a :EyeColor,
+        :Light,
+        owl:NamedIndividual .
+
+:Half_blood a :BloodStatus,
+        owl:NamedIndividual ;
+    :hasBloodStatus :Half_blood .
+
+:HairColor a owl:Class .
+
+:Patronus a owl:Class .
+
+:Job a owl:Class .
+
+:Light a owl:Class .
+
+:Wand a owl:Class .
+
+:Pure_blood a :BloodStatus,
+        owl:NamedIndividual ;
+    :hasBloodStatus :Pure_blood .
+
+:Gryffindor a :House,
+        owl:NamedIndividual .
+
+:Student a :Job,
+        owl:NamedIndividual .
+
+:Skills a owl:Class .
+
+:Human a owl:Class ;
+    rdfs:subClassOf :Species .
+
+:Effect a owl:Class .
+
+:Incantation a owl:Class .
+
+:Spell a owl:Class .
+
+:Character a owl:Class .
+
+:Unknown a :EyeColor,
+        :HairColor,
+        :Job,
+        :Light,
+        :Patronus,
+        :Wand,
+        owl:NamedIndividual .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( :MuggleBlood :MuggleBorn :PureBlood ) .
+

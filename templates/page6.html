@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Wizards who are male and pureblood  </title>
+    <link rel="stylesheet" type="text/css" href="../static/pure.css" />
+</head>
+<h2 class="title">
+  <center>
+    <br>
+    <p style="color:rgb(255, 255, 255);font-style:bold;font-size:20px">Wizards who are male and pureblood </p>
+    <br>
+    <p style="color:rgb(255, 255, 255);font-style:bold;font-size:18px">RESULTS:</p>
+    
+  </center>
+</h2>
+<body>
+
+  <table border="1" style="font-family:Georgia, Garamond, Serif;color:rgb(255, 255, 255);font-style:bold;">
+    <tr style="font-variant:small-caps;font-style:normal;color:rgb(255, 255, 255);font-style:bold;font-size:18px;">
+    <thead>
+      <th>NAME</th>
+      <th>BLOOD TYPE</th>
+  </thead>
+  <tbody>
+      {% for row in queryRes %}
+
+      <tr>
+          <td>
+              {{ row["sub"] }}
+          </td>
+          <td>
+              {{ row["ob"] }}
+          </td>
+      </tr>
+
+      {% endfor %}
+  </tbody>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    header .heading {
+        color: 	#d2b48c;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+    .toggle.active {
+        background: url(https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        cursor: pointer;
+    }
+
+.dis {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #070707;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+    .dis.active {
+        right: 200px;
+    }
+
+    .dis video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+.vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background: #111111;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 40;
+}
+
+    .text h2 {
+        font-size: 6em;
+        font-weight: 800;
+        color: #ffecb8;
+        line-height: 1em;
+        text-transform: uppercase;
+    }
+    .text label {
+        font-size: 1em;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
+
+ 
+
+    .text p {
+        font-size: 1.2em;
+        color: #abcdef;
+        margin: 20px 0;
+        font-weight: 400;
+        max-width: 700px;
+    }
+
+    .text a {
+        display: inline-block;
+        font-size: 1em;
+        background: #0a0a0a;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 10px;
+        color: #111;
+        letter-spacing: 2px;
+        transition: 0.2s;
+    }
+
+        .text a:hover {
+            letter-spacing: 5px;
+        }
+
+.social {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .social li {
+        list-style: none;
+    }
+
+        .social li a {
+            display: inline-block;
+            margin-right: 20px;
+            filter: invert(1);
+            transform: scale(0.5);
+            transition: 0.5s;
+        }
+
+            .social li a:hover {
+                transform: scale(0.5) translateY(-15px);
+            }
+
+
+
+@media (max-width: 991px) {
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
